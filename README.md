@@ -59,12 +59,12 @@ MAINNET_NODE_URL=https://your_rpc_node_url_here
 
 6. Create a Coinbase Developer Account and add a Coinbase API Key from Coinbase Developer Portal - https://portal.cdp.coinbase.com/projects/api-keys 
 Create a config/api_key.json file and store your Coinbase API key there. The file should look like this:
-
+```
 {
   "name": "organizations/fdassfd-fdafd-fdafds-dfasfds/apiKeys/fda-fdasdf-fdafd-fdsfds",
   "privateKey": "-----BEGIN EC PRIVATE KEY-----\nhjfdskljfadfjsadfkdlfkadshfhdsf\n-----END EC PRIVATE KEY-----\n"
 }
-
+```
 7. Run the Staking Script
 Now you’re ready to run the staking operation. Execute the script using the following command:
 ```
