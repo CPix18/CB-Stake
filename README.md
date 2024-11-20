@@ -4,32 +4,47 @@ This project demonstrates how to stake Ethereum (ETH) using the Coinbase SDK and
 ## Prerequisites
 Before setting up the environment, ensure you have the following installed on your machine:
 
-Node.js (v16 or higher recommended) (brew install node) - this uses homebrew to install (to install homebrew - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
+Node.js (v16 or higher recommended) to install - 
+```
+brew install node
+```
+this uses homebrew to install, if you need to install homebrew - 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 npm (comes with Node.js)
-TypeScript (You can install TypeScript globally via npm install -g typescript)
+TypeScript You can install TypeScript globally via 
+```
+npm install -g typescript
+```
 
 ## Steps to Set Up
 1. Clone the repository
 If you haven’t already cloned the repository, you can do so using the following command:
+```
 git clone https://github.com/CPix18/CB-Stake
 cd CB-Stake
+```
 
-2. Initialize Node.js Project
+3. Initialize Node.js Project
 Run the following command to initialize a new Node.js project:
-
+```
 npm init -y
+```
 This will generate a package.json file with default values.
 
 3. Initialize TypeScript
 Next, initialize TypeScript for the project by running:
-
+```
 npx tsc --init
+```
 This command will create a tsconfig.json file, which is used to configure TypeScript options.
 
 4. Install Dependencies
 Run the following command to install the required Node.js dependencies:
-
+```
 npm install @coinbase/coinbase-sdk ethers dotenv
+```
 This will install:
 
 @coinbase/coinbase-sdk - Coinbase SDK for interacting with the Coinbase API.
@@ -52,7 +67,9 @@ Create a config/api_key.json file and store your Coinbase API key there. The fil
 
 7. Run the Staking Script
 Now you’re ready to run the staking operation. Execute the script using the following command:
+```
 npx ts-node stake.ts
+```
 This will start the staking process, and the following actions will take place:
 
 The script will check the balance of ETH available for staking.
