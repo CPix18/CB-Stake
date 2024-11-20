@@ -53,11 +53,13 @@ dotenv - Package for loading environment variables from a .env file.
 
 5. Set Up the .env File
 Create a .env file in the config folder of the project. This file should contain the following environment variables:
+```
 WALLET_ADDRESS=your_wallet_address_here
 PRIVATE_KEY=your_private_key_here
 MAINNET_NODE_URL=https://your_rpc_node_url_here
+```
 
-6. Create a Coinbase Developer Account and add a Coinbase API Key from Coinbase Developer Portal - https://portal.cdp.coinbase.com/projects/api-keys 
+7. Create a Coinbase Developer Account and add a Coinbase API Key from Coinbase Developer Portal - https://portal.cdp.coinbase.com/projects/api-keys 
 Create a config/api_key.json file and store your Coinbase API key there. The file should look like this:
 ```
 {
