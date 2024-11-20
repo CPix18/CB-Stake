@@ -58,6 +58,12 @@ WALLET_ADDRESS=your_wallet_address_here
 PRIVATE_KEY=your_private_key_here
 MAINNET_NODE_URL=https://your_rpc_node_url_here
 ```
+To make those variables work you'll need to do the following commands
+```
+cd config
+source .env
+cd ..
+```
 
 7. Create a Coinbase Developer Account and add a Coinbase API Key from Coinbase Developer Portal - https://portal.cdp.coinbase.com/projects/api-keys 
 Create a config/api_key.json file and store your Coinbase API key there. The file should look like this:
