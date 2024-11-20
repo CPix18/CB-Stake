@@ -80,25 +80,18 @@ Once the script runs successfully, you should see the transaction hash printed i
 
 ## File Structure
 
-CB-Stake/
-├── config/
-│   ├── .env              # Environment variables
-│   ├── api_key.json      # Coinbase API Key
-├── node_modules/         # Dependencies (there will be numerous folders in here)
-│   ├── @tsconfig         # Typescript enabled
-│   ├── @dotenv           # ENV system
-├── stake.ts              # Staking script
-├── package.json          # Node.js project configuration
-├── package-lock.json     # Node.js project configuration
-├── tsconfig.json         # TypeScript configuration
-├── .gitignore            # Ignores files/secrets from being pushed to Github
-└── README.md             # Project README
+1. Inside of CB-Stake you'll have
+2. config and node_modules folders - inside config will be a .env file and api_key.json
+3. stake.ts
+4. .gitignore 
+5. package.json and package-lock.json
+6. tsconfig.json
 
 ## Troubleshooting
-Missing Environment Variables: Ensure that all environment variables in the .env file are set correctly.
-Private Key: Double-check that your private key is valid and is not exposed publicly.
-Node URL: Make sure that the RPC Node URL is accessible and functional.
-Wallet Address: Make sure your wallet address's public key matches the private key you use.
-Missing Dependencies: If you encounter issues with missing packages, try running npm install again.
+1. Missing Environment Variables: Ensure that all environment variables in the .env file are set correctly.
+2. Private Key: Double-check that your private key is valid and is not exposed publicly.
+3. Node URL: Make sure that the RPC Node URL is accessible and functional.
+4. Wallet Address: Make sure your wallet address's public key matches the private key you use.
+5. Missing Dependencies: If you encounter issues with missing packages, try running npm install again.
 
 
