@@ -51,7 +51,12 @@ This will install:
 ethers - Ethereum JavaScript library for interacting with the Ethereum blockchain.
 dotenv - Package for loading environment variables from a .env file.
 
-5. Set Up the .env File
+5. Set Up the .env File in a config Folder
+```
+mkdir config
+touch .env
+touch api_key.json
+```
 Create a .env file in the config folder of the project. This file should contain the following environment variables:
 ```
 WALLET_ADDRESS=your_wallet_address_here
@@ -66,7 +71,7 @@ cd ..
 ```
 
 7. Create a Coinbase Developer Account and add a Coinbase API Key from Coinbase Developer Portal - https://portal.cdp.coinbase.com/projects/api-keys 
-Create a config/api_key.json file and store your Coinbase API key there. The file should look like this:
+Store you Coinbase API key in api_key.json. The file should look like this:
 ```
 {
   "name": "organizations/fdassfd-fdafd-fdafds-dfasfds/apiKeys/fda-fdasdf-fdafd-fdsfds",
