@@ -11,7 +11,7 @@ const apiKeyFilePath = "./config/api_key.json";
  */
 async function stake() {
     const coinbase = Coinbase.configureFromJson({ filePath: apiKeyFilePath });
-    const walletAddress = process.env.WALLET_ADDRESS; // Access private key from environment
+    const walletAddress = process.env.WALLET_ADDRESS; // Access wallet address from environment
     if (!walletAddress) {
         console.error("Wallet Address is missing. Please set it in the .env file.");
         return;
@@ -39,7 +39,7 @@ async function stake() {
     const wallet = new ethers.Wallet(walletPrivateKey);
 
     // Load the Node URL from the environment variable, RPC endpoints can be found here https://chainlist.org
-    const NodeURL = process.env.MAINNET_NODE_URL; // Access private key from environment
+    const NodeURL = process.env.MAINNET_NODE_URL; // Access node URL from environment
     if (!NodeURL) {
         console.error("Node URL is missing. Please set it in the .env file.");
         return;
